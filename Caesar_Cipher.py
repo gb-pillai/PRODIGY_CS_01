@@ -17,13 +17,13 @@ def decrypt(text, shift):
 
 def main():
     print("Caesar Cipher")
-    choice = input("Do you want to (E)ncrypt or (D)ecrypt? ").upper()
+    choice = input("Do you want to (E)ncrypt or (D)ecrypt? \n").upper()
     if choice not in ['E', 'D']:
         print("Invalid choice. Please select 'E' or 'D'.")
         return
     
-    message = input("Enter your message: ")
-    shift = int(input("Enter the shift value: "))
+    message = input("Enter your message: \n")
+    shift = int(input("Enter the shift value: \n"))
     
     if choice == 'E':
         result = encrypt(message, shift)
